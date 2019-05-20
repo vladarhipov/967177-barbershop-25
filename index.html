@@ -22,12 +22,6 @@
     </header>
 
     <main class="container">
-      <ul class="bread-crumbs">
-        <li class="bread-crumbs-item"><a href="/" class="vissualy-hidden">Главная</a></li>
-        <li class="bread-crumbs-item"><a href="">Каталог</a></li>
-        <li class="bread-crumbs-item"><a href="">Инструмент</a></li>
-        <li class="bread-crumbs-item-current">Перформаторы</li>
-      </ul>
       <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
 
       <section class="features">
@@ -66,7 +60,8 @@
       <section class="gallery">
         <h2 class="">Фотогалерея</h2>
         <figure class="gallery-content">
-          <img src="img/barbershop-interior.png" alt="Итерьер барбершопа «Бородинский»" width="286" height="163">
+          <img src="img/barbershop-interior.png" alt="Итерьер барбершопа «Бородинский»" width="286" height="163          Бшьп ыкс=Эшьп.ифкиукырщз-штеукшщкюзтпЭ alt=@Bnthmth ,fh,thijgf «<jhjlbycrbq»@ цшвер=Э286Э рушпре=Э163ЭЮ
+">
         </figure>
         <div class="gallery-buttons">
 
@@ -87,7 +82,7 @@
           Сб—Вс: С 10:00 до 19:00
         </p>
         <div class="contact-buttons">
-          <a href="#" class="button">Как проехать</a>
+          <button type="button" name="map-open" class="button">Как проехать</button>
           <a href="#" class="button">Обратная связь</a>
         </div>
       </section>
@@ -95,7 +90,13 @@
       <section class="appointment">
         <h2 class="">Записаться</h2>
         <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <!-- The form will appear here -->
+        <form class="" action="https://echo.htmlacademy.ru" method="post">
+          <label>Дата<input type="date" name="date" placeholder="08.10.2017"></label>
+          <label>Время<input type="time" name="time" placeholder="10:00"></label>
+          <label>Ваше имя<input type="text" name="client-name" placeholder="Борода"></label>
+          <label>Телефон<input type="text" name="phone" placeholder="+7 123 456-78-90"></label>
+          <button type="submit" name="appointment-button" value="">Отправить</button>
+        </form>
       </section>
     </main>
 
@@ -119,14 +120,20 @@
     </footer>
 
     <section class="modal modal-login">
-      <button type="button" name="close-button" class="close-btn"></button>
+      <button type="button" name="close-button" class="close-btn">Закрыть</button>
       <h2 class="">Личный кабинет</h2>
       <p>Введите пожалуйста свой логин и пароль</p>
-      <!-- The form will appear here -->
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden">Логин<input type="text" name="login" placeholder="Логин"></label>
+        <label class="visually-hidden">Пароль<input type="password" name="password" placeholder="Пароль"></label>
+        <input type="checkbox" name="remember" id="remember-field" checked><label for="remember-field">Запомните меня</label>
+        <a href="#">Я забыл пароль</a>
+        <button type="submit">Войти</button>
+      </form>
     </section>
 
     <section class="modal map">
-      <button type="button" name="close-button" class="close-btn"></button>
+      <button type="button" name="close-button" class="close-btn">Закрыть</button>
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <!-- The map will appear here -->
     </section>
